@@ -8,7 +8,11 @@ export function renderImage({
   downloads,
 }) {
   return `<div class="photo-card">
-    <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+    <div class="foto-container">
+      <a href="${largeImageURL}" >  
+        <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+      </a>  
+    </div>
     <div class="info">
       <p class="info-item">
         <b>Likes</b>
